@@ -39,7 +39,7 @@ export default function Navbar() {
                 Sweet Crumbs
               </span>
               <span className="block text-[9px] tracking-[0.35em] uppercase text-gold-500 font-medium mt-0.5">
-                Artisan Patisserie
+                Homemade cakes
               </span>
             </Link>
 
