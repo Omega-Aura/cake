@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  /* Ladurée-inspired luxury palette */
+  --color-blush-50:  #fef6f3;
+  --color-blush-100: #fce8e2;
+  --color-blush-200: #f8cfc4;
+  --color-blush-400: #e8927a;
+  --color-blush-600: #c9604a;
+
+  --color-sage-50:  #f2f5f2;
+  --color-sage-100: #e0e9e0;
+  --color-sage-400: #7fa882;
+  --color-sage-600: #4e7952;
+
+  --color-gold-400: #c9a96e;
+  --color-gold-500: #b8860b;
+  --color-gold-600: #9a7209;
+
+  --color-mink-50:  #faf8f6;
+  --color-mink-100: #f2ede8;
+  --color-mink-200: #e8ddd4;
+  --color-mink-800: #4a3728;
+  --color-mink-900: #2d2018;
+
+  --color-cream:    #fdf8f0;
+
+  --font-sans:    'Inter', 'DM Sans', system-ui, sans-serif;
+  --font-display: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+
+  --animate-fade-up:    fade-up 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+  --animate-fade-in:    fade-in 0.6s ease both;
+  --animate-slide-left: slide-left 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(32px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slide-left {
+  from { opacity: 0; transform: translateX(24px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: #faf8f6;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Inter', sans-serif;
+}
+
+::selection {
+  background: #c9a96e33;
+  color: #2d2018;
+}
